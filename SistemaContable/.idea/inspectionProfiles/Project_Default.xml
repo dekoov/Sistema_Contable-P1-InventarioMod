@@ -1,0 +1,46 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <list>
+          <option value="paddleocr" />
+          <option value="huggingface_hub" />
+          <option value="pypdfium2" />
+          <option value="Pillow" />
+          <option value="opencv-python-headless" />
+          <option value="pdf2image" />
+          <option value="fastapi" />
+          <option value="uvicorn" />
+          <option value="gradio" />
+          <option value="python-multipart" />
+          <option value="aiofiles" />
+          <option value="pydantic" />
+          <option value="pydantic-settings" />
+          <option value="sqlalchemy" />
+          <option value="psycopg2-binary" />
+          <option value="alembic" />
+          <option value="asyncpg" />
+          <option value="pandas" />
+          <option value="numpy" />
+          <option value="openpyxl" />
+          <option value="XlsxWriter" />
+          <option value="python-dotenv" />
+          <option value="python-dateutil" />
+          <option value="pytz" />
+          <option value="loguru" />
+          <option value="python-json-logger" />
+          <option value="pytest" />
+          <option value="pytest-asyncio" />
+          <option value="httpx" />
+          <option value="shapely" />
+          <option value="pyclipper" />
+          <option value="lmdb" />
+          <option value="tqdm" />
+          <option value="redis" />
+          <option value="celery" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
