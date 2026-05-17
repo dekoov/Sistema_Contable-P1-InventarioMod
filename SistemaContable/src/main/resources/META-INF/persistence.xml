@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             version="2.1">
+    <persistence-unit name="SistemaContablePU"
+                      transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- Entidades comunes -->
+        <class>com.sistema.comun.modelo.Usuario</class>
+
+        <!-- Entidades facturación -->
+        <class>com.sistema.facturacion.modelo.Cliente</class>
+        <class>com.sistema.facturacion.modelo.CiudadEntrega</class>
+        <class>com.sistema.facturacion.modelo.FacturaCabecera</class>
+        <class>com.sistema.facturacion.modelo.FacturaDetalle</class>
+
+        <!-- CAMBIAR DE ACUERDO A SUS AJUSTES! -->
+        <properties>
+            <property name="hibernate.connection.driver_class"
+                      value="oracle.jdbc.OracleDriver"/>
+            <property name="hibernate.connection.url"
+                      value="jdbc:oracle:thin:@//localhost:1521/XEPDB1"/>
+            <property name="hibernate.connection.username"
+                      value="SYSTEM"/>
+            <property name="hibernate.connection.password"
+                      value="admin1234"/>
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.Oracle10gDialect"/>
+            <property name="hibernate.hbm2ddl.auto"
+                      value="validate"/>
+            <property name="hibernate.show_sql"   value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
